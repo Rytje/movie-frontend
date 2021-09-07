@@ -1,16 +1,17 @@
 import React, { useState } from 'react';
+import logo from '../Assets/Netflix_Logo_RGB.png'
 
 
 export default function LandingPage() {
 
-    const [clicked, setClicked] = useState(null);
-    const toggle = i => {
-        if (clicked === i) {
-            return setClicked(null)
-        }
+    // const [clicked, setClicked] = useState(null);
+    // const toggle = i => {
+    //     if (clicked === i) {
+    //         return setClicked(null)
+    //     }
 
-        setClicked(i)
-    }
+    //     setClicked(i)
+    // }
 
     const accordion = [{
         question: "Wat kan ik kijken op Netflix?",
@@ -24,15 +25,18 @@ export default function LandingPage() {
     }];
 
     return (
-        <>
+        <div id="landing-page">
             <div>
-                <div>
-                    <h1>Netflix</h1>
-                    <div>
-                        <button>Nederlands</button>
-                        <button>Inloggen</button>
-                    </div>
-                </div>
+                <header>
+                    <nav>
+                        {/* <h1>Netflix</h1> */}
+                        <img id="logo" src={logo} alt="" />
+                        <div>
+                            <button>Nederlands</button>
+                            <button>Inloggen</button>
+                        </div>
+                    </nav>
+                </header>
                 <h2>Onbeperkt series, films en meer kijken.</h2>
                 <p>Kijk waar je wilt. Altijd opzegbaar.</p>
                 <p>Klaar om te kijken? Voer je e-mailadres in om je lidmaatschap te starten of te hernieuwen.</p>
@@ -44,8 +48,10 @@ export default function LandingPage() {
             </div>
 
             <div>
-                <h2>Kijk op je tv.</h2>
-                <p>Kijk op smart-tv's, PlayStation, Xbox, Chromecast, Apple TV, blu-rayspelers en meer.</p>
+                <div>
+                    <h2>Kijk op je tv.</h2>
+                    <p>Kijk op smart-tv's, PlayStation, Xbox, Chromecast, Apple TV, blu-rayspelers en meer.</p>
+                </div>
                 <div>
                     <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png" alt="" />
                     <video autoPlay playsInline muted loop>
@@ -89,8 +95,8 @@ export default function LandingPage() {
             <div>
                 <h2>Veelgestelde vragen</h2>
                 {/* Accordion */}
-                <div className="accordion-title" onClick={() => toggle(i)} />
-                <div className={clicked === i ? "accordion-content open" : "accordion-content"} />
+                {/* <div className="accordion-title" onClick={() => toggle(i)} /> */}
+                {/* <div className={clicked === i ? "accordion-content open" : "accordion-content"} /> */}
                 {/* Accordion */}
                 <h3>Klaar om te kijken? Voer je e-mailadres in om je lidmaatschap te starten of te hernieuwen.</h3>
                 <form action="" method="post">
@@ -98,6 +104,6 @@ export default function LandingPage() {
                     <button type="submit">Aan de slag &#62;</button>
                 </form>
             </div>
-        </>
+        </div>
     )
 }
