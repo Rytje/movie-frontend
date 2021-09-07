@@ -1,4 +1,4 @@
-
+import "./Sass/mainStyles.css"
 
 function App() {
   return (
