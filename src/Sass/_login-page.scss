@@ -1,0 +1,38 @@
+@use './colors';
+
+#login-page {
+    background-color: $background-color;
+    color: $font-color;
+
+    #logo {
+        width: 250px;
+    }
+
+    h2 {
+        font-size: 50px;
+        font-weight: bold;
+    }
+
+    p {
+        color: $font-color;
+        font-size: 25px;
+    }
+
+    #rememberCheck{
+        width: 20px;
+        height: 20px;
+        -webkit-appearance: checkbox;
+    }
+
+    a{
+        color: blue;
+    }
+
+    input {
+        background-color: $background-color-alt;
+    }
+
+    button{
+        background-color: $primary-color;
+    }
+}
