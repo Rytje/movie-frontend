@@ -1,10 +1,13 @@
-
+import LandingPage from "./Components/LandingPage";
+import Navbar from "./Components/Navbar";
+import "./Sass/mainStyles.css"
 
 function App() {
   return (
-    <div>
-        <h1>test</h1>
-    </div>
+    <>
+       {/* <Navbar/> */}
+       <LandingPage />
+    </>
   );
 }
 

@@ -1,0 +1,24 @@
+footer {
+    background-color: $background-color;
+    color: $font-color-alt;
+
+    h4 {
+        font-size: 2.5vh;
+        margin-left: 12.5vw;
+        padding: 2vw;
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .links-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        row-gap: 1vw;
+        width: 70%;
+        margin: auto;
+    }
+}
