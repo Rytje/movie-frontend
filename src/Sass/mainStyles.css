@@ -196,6 +196,7 @@ button {
   display: -ms-flexbox;
   display: flex;
   background-color: black;
+  margin-bottom: 8px;
 }
 
 #landing-page > div:nth-of-type(2) div {
@@ -223,5 +224,111 @@ button {
   left: 5rem;
   bottom: 24.375rem;
   z-index: 1;
+}
+
+#landing-page > div:nth-of-type(3) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: black;
+  margin-bottom: 8px;
+}
+
+#landing-page > div:nth-of-type(3) div {
+  height: 31.25rem;
+}
+
+#landing-page > div:nth-of-type(3) h2 {
+  margin-top: 9.375rem;
+  margin-left: 6.25rem;
+  margin-bottom: 1.875rem;
+}
+
+#landing-page > div:nth-of-type(3) p {
+  margin-left: 6.25rem;
+}
+
+#landing-page > div:nth-of-type(3) img {
+  position: relative;
+  z-index: 2;
+}
+
+#landing-page > div:nth-of-type(4) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: black;
+  margin-bottom: 8px;
+}
+
+#landing-page > div:nth-of-type(4) div {
+  height: 31.25rem;
+}
+
+#landing-page > div:nth-of-type(4) h2 {
+  margin-top: 9.375rem;
+  margin-left: 6.25rem;
+  margin-bottom: 1.875rem;
+}
+
+#landing-page > div:nth-of-type(4) p {
+  margin-left: 6.25rem;
+}
+
+#landing-page > div:nth-of-type(4) img {
+  position: relative;
+  z-index: 2;
+}
+
+#landing-page > div:nth-of-type(4) video {
+  display: inline-block;
+  position: relative;
+  left: 5rem;
+  bottom: 24.375rem;
+  z-index: 1;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+}
+
+#landing-page > div:nth-of-type(5) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: black;
+  margin-bottom: 8px;
+}
+
+#landing-page > div:nth-of-type(5) div {
+  height: 31.25rem;
+}
+
+#landing-page > div:nth-of-type(5) h2 {
+  margin-top: 9.375rem;
+  margin-left: 6.25rem;
+  margin-bottom: 1.875rem;
+}
+
+#landing-page > div:nth-of-type(5) p {
+  margin-left: 6.25rem;
+}
+
+#landing-page > div:nth-of-type(5) img {
+  position: relative;
+  z-index: 2;
+}
+
+#landing-page > div:nth-of-type(5) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: black;
+  margin-bottom: 8px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=mainStyles.css.map */
