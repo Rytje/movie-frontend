@@ -1,5 +1,5 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
 @import './_colors';
-@import './_fonts';
 @import './_reset';
 @import './_typography';
 
@@ -9,3 +9,4 @@
 @import './_slider';
 
 // pages
+@import './landing-page';

@@ -1,0 +1,104 @@
+@use './colors';
+@use './typography';
+
+#landing-page {
+    background-color: $background-color;
+    color: $font-color;
+
+    #logo {
+        width: 11rem;
+    }
+
+    & > div:nth-of-type(1) {
+        // background-color: red;
+        height: 43.125rem;
+        background-size: auto;
+        background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/5a27cb25-33a9-4bcc-b441-95fefabcbd37/897182ab-a592-4015-9372-5047825c92df/NL-nl-20210823-popsignuptwoweeks-perspective_alpha_website_small.jpg");
+        background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/5a27cb25-33a9-4bcc-b441-95fefabcbd37/897182ab-a592-4015-9372-5047825c92df/NL-nl-20210823-popsignuptwoweeks-perspective_alpha_website_large.jpg");
+        margin-bottom: 8px;
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 9.375rem;
+
+            button {
+                height: 2.5rem;
+                color: $font-color;
+                background-color: rgba(0, 0, 0, 0.4);
+                border: 1px solid rgb(170, 170, 170);
+                -webkit-border-radius: 3px;
+                -moz-border-radius: 3px;
+                border-radius: 3px;
+                margin-right: 1.875rem;
+
+                + button {
+                    background-color: $primary-color;
+                    border: none;
+                    line-height: normal;
+                    padding: 0 1.25rem;
+                    margin-right: 3.125rem;
+                }
+            }
+        }
+
+        h1,
+        p {
+            text-align: center;
+        }
+
+        form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            input {
+                height: 3.75rem;
+                width: 40%;
+                max-width: 43.75rem;
+            }
+
+            button {
+                height: 3.75rem;
+                width: 20%;
+                max-width: 12.5rem;
+                color: $font-color;
+                background-color: $primary-color;
+            }
+        }
+    }
+
+    & > div:nth-of-type(2) {
+        display: flex;
+        background-color: black;
+
+        div {
+            height: 31.25rem;
+        }
+
+        h2 {
+            margin-top: 9.375rem;
+            margin-left: 6.25rem;
+            margin-bottom: 1.875rem;
+        }
+
+        p {
+            margin-left:6.25rem;
+        }
+
+        img {
+            position: relative;
+            z-index: 2;
+        }
+
+        video {
+            display: inline-block;
+            position: relative;
+            left: 5rem;
+            bottom: 24.375rem;
+            z-index: 1;
+        }
+    }
+    
+}
