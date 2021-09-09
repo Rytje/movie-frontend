@@ -1,5 +1,6 @@
 import LandingPage from "./Components/LandingPage";
 import Navbar from "./Components/Navbar";
+import Footer from "./Components/Footer";
 import "./Sass/mainStyles.css"
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
     <>
        {/* <Navbar/> */}
        <LandingPage />
+       <Footer />
     </>
   );
 }
