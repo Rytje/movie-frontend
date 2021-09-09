@@ -29,25 +29,14 @@ export default function LandingPage() {
             <div>
                 <header>
                     <nav>
-<<<<<<< HEAD
-                        {/* <h1>Netflix</h1> */}
-                        <img id="logo" src={logo} alt="" />
-                        <div>
-                            <button>Nederlands</button>
-=======
                         <img id="logo" src={logo} alt="" />
                         <div>
                             <button><i class="lni lni-world"></i>Nederlands</button>
->>>>>>> 1f17d462ed3b3b621ffb852f4cea1bc502d172cc
                             <button>Inloggen</button>
                         </div>
                     </nav>
                 </header>
-<<<<<<< HEAD
-                <h2>Onbeperkt series, films en meer kijken.</h2>
-=======
                 <h1>Onbeperkt series, films en meer kijken.</h1>
->>>>>>> 1f17d462ed3b3b621ffb852f4cea1bc502d172cc
                 <p>Kijk waar je wilt. Altijd opzegbaar.</p>
                 <p>Klaar om te kijken? Voer je e-mailadres in om je lidmaatschap te starten of te hernieuwen.</p>
 

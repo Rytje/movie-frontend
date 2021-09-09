@@ -7,7 +7,6 @@ import React from 'react'
 
     return (
         <div>
-            <h1>test</h1>
         </div>
     )
 }
