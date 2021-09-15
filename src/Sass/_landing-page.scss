@@ -10,13 +10,13 @@
     background-size: auto;
     background-image: linear-gradient(
         180deg,
-        rgba(0, 0, 0, 0.678),
+        rgba(0, 0, 0, 0.8),
         rgba(0, 0, 0, 0.144)
       ),
       url("https://assets.nflxext.com/ffe/siteui/vlv3/5a27cb25-33a9-4bcc-b441-95fefabcbd37/897182ab-a592-4015-9372-5047825c92df/NL-nl-20210823-popsignuptwoweeks-perspective_alpha_website_small.jpg");
     background-image: linear-gradient(
         180deg,
-        rgba(0, 0, 0, 0.678),
+        rgba(0, 0, 0, 0.8),
         rgba(0, 0, 0, 0.144)
       ),
       url("https://assets.nflxext.com/ffe/siteui/vlv3/5a27cb25-33a9-4bcc-b441-95fefabcbd37/897182ab-a592-4015-9372-5047825c92df/NL-nl-20210823-popsignuptwoweeks-perspective_alpha_website_large.jpg");
@@ -49,6 +49,8 @@
         -moz-transform: translateY(-50%);
         transform: translateY(-50%);
         border-radius: 3px;
+        padding-left: 7px;
+        padding-right: 7px;
         margin-top: 2rem;
         margin-right: 1.875rem;
 
@@ -67,64 +69,64 @@
           transform: translateY(-50%);
         }
       }
+
+      h1,
+      h5,
+      p {
+        text-align: center;
+      }
+
+      form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        input {
+          height: 3.75rem;
+          width: 40%;
+          max-width: 43.75rem;
+        }
+
+        button {
+          height: 3.75rem;
+          width: 20%;
+          max-width: 12.5rem;
+          color: $font-color;
+          background-color: $primary-color;
+        }
+      }
     }
 
-    h1,
-    h5,
-    p {
-      text-align: center;
-    }
-
-    form {
+    & > div:nth-of-type(2) {
       display: flex;
-      justify-content: center;
-      align-items: center;
+      background-color: black;
 
-      input {
-        height: 3.75rem;
-        width: 40%;
-        max-width: 43.75rem;
+      div {
+        height: 31.25rem;
       }
 
-      button {
-        height: 3.75rem;
-        width: 20%;
-        max-width: 12.5rem;
-        color: $font-color;
-        background-color: $primary-color;
+      h2 {
+        margin-top: 9.375rem;
+        margin-left: 6.25rem;
+        margin-bottom: 1.875rem;
       }
-    }
-  }
 
-  & > div:nth-of-type(2) {
-    display: flex;
-    background-color: black;
+      p {
+        margin-left: 6.25rem;
+      }
 
-    div {
-      height: 31.25rem;
-    }
+      img {
+        position: relative;
+        z-index: 2;
+      }
 
-    h2 {
-      margin-top: 9.375rem;
-      margin-left: 6.25rem;
-      margin-bottom: 1.875rem;
-    }
-
-    p {
-      margin-left: 6.25rem;
-    }
-
-    img {
-      position: relative;
-      z-index: 2;
-    }
-
-    video {
-      display: inline-block;
-      position: relative;
-      left: 5rem;
-      bottom: 24.375rem;
-      z-index: 1;
+      video {
+        display: inline-block;
+        position: relative;
+        left: 5rem;
+        bottom: 24.375rem;
+        z-index: 1;
+      }
     }
   }
 }

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import logo from "../Assets/netflix-logo.svg";
+import { FaGlobe } from "react-icons/fa";
 
 export default function LandingPage() {
   // const [clicked, setClicked] = useState(null);
@@ -34,13 +35,13 @@ export default function LandingPage() {
             <img id="logo" src={logo} alt="" />
             <div>
               <button>
-                <i class="lni lni-world"></i>Nederlands
+                <FaGlobe/> Nederlands
               </button>
               <button>Inloggen</button>
             </div>
           </div>
         </header>
-        <h1>Onbeperkt series, films en meer kijken.</h1>
+        <h1>Onbeperkt series, films  en meer kijken.</h1>
         <h5>Kijk waar je wilt. Altijd opzegbaar.</h5>
         <p>
           Klaar om te kijken? Voer je e-mailadres in om je lidmaatschap te
@@ -122,7 +123,7 @@ export default function LandingPage() {
         </div>
       </div>
 
-      <div>
+      <div className='story-card-kids'>
         <h2>Maak profielen voor kids.</h2>
         <p>
           Laat kids op avontuur gaan met hun favoriete personages in een
