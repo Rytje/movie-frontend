@@ -444,7 +444,7 @@ a:hover {
   background-size: auto;
   background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/5a27cb25-33a9-4bcc-b441-95fefabcbd37/897182ab-a592-4015-9372-5047825c92df/NL-nl-20210823-popsignuptwoweeks-perspective_alpha_website_small.jpg");
   background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/5a27cb25-33a9-4bcc-b441-95fefabcbd37/897182ab-a592-4015-9372-5047825c92df/NL-nl-20210823-popsignuptwoweeks-perspective_alpha_website_large.jpg");
-  margin-bottom: 8px;
+  margin-bottom: 0.5rem;
 }
 
 #landing-page > div:nth-of-type(1) nav {
@@ -508,144 +508,148 @@ a:hover {
   background-color: #e50914;
 }
 
-#landing-page > div:nth-of-type(2) {
+#landing-page .our-story-card {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: black;
-  margin-bottom: 8px;
-}
-
-#landing-page > div:nth-of-type(2) div {
-  height: 31.25rem;
-}
-
-#landing-page > div:nth-of-type(2) h2 {
-  margin-top: 9.375rem;
-  margin-left: 6.25rem;
-  margin-bottom: 1.875rem;
-}
-
-#landing-page > div:nth-of-type(2) p {
-  margin-left: 6.25rem;
-}
-
-#landing-page > div:nth-of-type(2) img {
-  position: relative;
-  z-index: 2;
-}
-
-#landing-page > div:nth-of-type(2) video {
-  display: inline-block;
-  position: relative;
-  left: 5rem;
-  bottom: 24.375rem;
-  z-index: 1;
-}
-
-#landing-page > div:nth-of-type(3) {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  background-color: black;
-  margin-bottom: 8px;
-}
-
-#landing-page > div:nth-of-type(3) div {
-  height: 31.25rem;
-}
-
-#landing-page > div:nth-of-type(3) h2 {
-  margin-top: 9.375rem;
-  margin-left: 6.25rem;
-  margin-bottom: 1.875rem;
-}
-
-#landing-page > div:nth-of-type(3) p {
-  margin-left: 6.25rem;
-}
-
-#landing-page > div:nth-of-type(3) img {
-  position: relative;
-  z-index: 2;
-}
-
-#landing-page > div:nth-of-type(4) {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  background-color: black;
-  margin-bottom: 8px;
-}
-
-#landing-page > div:nth-of-type(4) div {
-  height: 31.25rem;
-}
-
-#landing-page > div:nth-of-type(4) h2 {
-  margin-top: 9.375rem;
-  margin-left: 6.25rem;
-  margin-bottom: 1.875rem;
-}
-
-#landing-page > div:nth-of-type(4) p {
-  margin-left: 6.25rem;
-}
-
-#landing-page > div:nth-of-type(4) img {
-  position: relative;
-  z-index: 2;
-}
-
-#landing-page > div:nth-of-type(4) video {
-  display: inline-block;
-  position: relative;
-  left: 5rem;
-  bottom: 24.375rem;
-  z-index: 1;
-  max-width: -webkit-fit-content;
-  max-width: -moz-fit-content;
-  max-width: fit-content;
-}
-
-#landing-page > div:nth-of-type(5) {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  background-color: black;
-  margin-bottom: 8px;
-}
-
-#landing-page > div:nth-of-type(5) div {
-  height: 31.25rem;
-}
-
-#landing-page > div:nth-of-type(5) h2 {
-  margin-top: 9.375rem;
-  margin-left: 6.25rem;
-  margin-bottom: 1.875rem;
-}
-
-#landing-page > div:nth-of-type(5) p {
-  margin-left: 6.25rem;
-}
-
-#landing-page > div:nth-of-type(5) img {
-  position: relative;
-  z-index: 2;
-}
-
-#landing-page > div:nth-of-type(5) {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  background-color: black;
-  margin-bottom: 8px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 25rem;
+  padding: 2rem 4rem;
+  margin-bottom: 0.5rem;
+  overflow: hidden;
+  background-color: #000000;
+}
+
+#landing-page .our-story-card .our-story-card-text {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+#landing-page .our-story-card .our-story-card-title {
+  color: #ffffff;
+  line-height: 1.1;
+  margin-bottom: .4em;
+}
+
+#landing-page .our-story-card .our-story-card-subtitle {
+  color: #ffffff;
+}
+
+#landing-page .our-story-card-img-container {
+  -ms-flex-preferred-size: 45%;
+      flex-basis: 45%;
+  overflow: hidden;
+}
+
+#landing-page .our-story-card-animation-container {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+#landing-page .our-story-card-animation {
+  width: 100%;
+  height: 100%;
+  max-width: 73%;
+  max-height: 54%;
+  position: absolute;
+  top: 26%;
+  left: 48%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+#landing-page .our-story-card-img {
+  position: relative;
+  z-index: 100;
+  max-width: 100%;
+  height: auto;
+}
+
+#landing-page .our-story-card-video {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#landing-page .downloadAndWatch .our-story-card-animation {
+  position: absolute;
+  left: 50%;
+  top: 17.5rem;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  margin: 0 auto;
+  background: #000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 60%;
+  height: 6rem;
+  min-width: 15em;
+  padding: .25em 0.65em;
+  border-radius: 0.75em;
+  border: 2px solid #333333;
+  z-index: 100;
+  -webkit-box-shadow: 0 0 2em 0 #000000;
+          box-shadow: 0 0 2em 0 #000000;
+}
+
+#landing-page .downloadAndWatch .our-story-card-animation::after {
+  width: 3em;
+  margin-left: auto;
+  height: 3em;
+  outline: 2px solid #000000;
+  outline-offset: -2px;
+  display: block;
+  background: url(https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/download-icon.gif) center center no-repeat;
+  background-size: 100%;
+  content: "";
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+#landing-page .downloadAndWatch .our-story-card-animation .our-story-card-animation-container {
+  position: relative;
+  overflow: hidden;
+}
+
+#landing-page .downloadAndWatch .our-story-card-animation .our-story-card-animation-image {
+  height: 4.5em;
+  width: 4.5em;
+  margin-right: 1rem;
+}
+
+#landing-page .downloadAndWatch .our-story-card-animation .our-story-card-animation-image img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#landing-page .text-0 {
+  color: #f5f5f1;
+  font-weight: 600;
+  font-size: 0.9em;
+}
+
+#landing-page .text-1 {
+  color: #047bf5;
+  font-size: 0.9em;
 }
 /*# sourceMappingURL=mainStyles.css.map */
