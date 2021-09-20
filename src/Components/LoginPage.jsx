@@ -48,7 +48,7 @@ export default function LoginPage() {
                     </div>
                     <div>
                         <p>
-                            Is Netflix nieuw voor jou? <a href="#">Registreet je nu</a>.
+                            Is Netflix nieuw voor jou? <a href="#">Registreer je nu</a>.
                         </p>
                     </div>
                     <p>This page is protected by Google reCAPTCHA to ensure you're not a bot. <a href="#">Lees meer informatie</a>.</p>
